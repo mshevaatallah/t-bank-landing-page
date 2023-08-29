@@ -131,7 +131,45 @@
   color: #d0d0d0;
 }
 
-@media screen and (max-width: 800px) {
+.about-us {
+  background-color: black;
+}
+
+.aboutus-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.partner-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.partner-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  margin: auto;
+}
+
+.partner-logo img {
+  margin-right: 40px;
+}
+.partner-title span {
+  color: #18624c;
+}
+
+.about-content {
+  padding-top: 50px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 840px) {
   .right-content {
     display: none;
   }
@@ -141,5 +179,11 @@
   }
   .customer-support {
     display: none;
+  }
+  .partner-logo {
+    overflow-x: auto;
+  }
+  .main-section {
+    padding-top: 1%;
   }
 }
