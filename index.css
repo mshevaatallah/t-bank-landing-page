@@ -130,3 +130,16 @@
   font-weight: 700;
   color: #d0d0d0;
 }
+
+@media screen and (max-width: 800px) {
+  .right-content {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+}
