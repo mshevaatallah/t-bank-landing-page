@@ -51,6 +51,10 @@
   cursor: pointer;
   color: white;
 }
+.nav-links span:hover {
+  color: #34c99d;
+  transition: 0.5s;
+}
 
 .nav-button {
   display: flex;
@@ -62,6 +66,10 @@
   margin-right: 20px;
   cursor: pointer;
   color: white;
+}
+.customer-support:hover {
+  color: #34c99d;
+  transition: 0.5s;
 }
 
 .login-button {
@@ -75,6 +83,11 @@
   color: white;
   line-height: 0px;
   padding-bottom: 18px;
+}
+.login-button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 .main-section {
   padding-top: 100px;
@@ -129,6 +142,11 @@
   margin-right: 20px;
 }
 
+.start-button:hover {
+  background-color: white;
+  color: green;
+  transition: 0.5s;
+}
 .button-main-container {
   display: flex;
 
@@ -176,7 +194,7 @@
 }
 
 .about-content {
-  padding-top: 80px;
+  margin-top: 150px;
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
