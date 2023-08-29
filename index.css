@@ -261,6 +261,9 @@
   .right-content {
     display: none;
   }
+  .navbar {
+    padding: 30px;
+  }
 
   .nav-links {
     display: none;
@@ -282,6 +285,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 70px;
   }
   @keyframes samping {
     0% {
@@ -369,7 +373,6 @@
 }
 
 section {
-  width: 100vw;
   view-timeline-name: --section;
 }
 
