@@ -252,4 +252,18 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  @keyframes samping {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-150px);
+    }
+  }
+  .partner-logo img {
+    animation: samping 5s infinite linear;
+  }
+  .partner-logo::-webkit-scrollbar {
+    display: none;
+  }
 }
