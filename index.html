@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navbar-container">
@@ -49,7 +50,7 @@
       </div>
     </div>
     <div class="about-us">
-      <div class="aboutus-container">
+      <div class="aboutus-container" data-aos="fade-up" data-aos-duration="800">
         <div class="our-partner">
           <div class="partner-title">Our <span>Partners</span></div>
           <div class="partner-logo">
@@ -109,7 +110,11 @@
           tBank is a financial technology company and is not a bank. Banking
           services provided by Lineage Bank, Member FDIC.
         </div>
-        <div class="powerful-main-box">
+        <div
+          class="powerful-main-box"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <div class="left-powerful">
             <div class="rounded-light">
               <svg
@@ -140,7 +145,47 @@
             <img src="assets/images/home.png" alt="" width="300" />
           </div>
         </div>
+        <div class="powerful-group">
+          <div
+            class="powerful-first"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="image-container">
+              <img src="assets/images/cards.png" alt="" width="300" />
+            </div>
+            <div class="powerful-card-content">
+              <div class="powerful-card-title">Modern stylish card design.</div>
+              <div class="powerful-card-subtitle">
+                Start spending worldwide with your brand new digital or physical
+                Mastercard debit card.
+              </div>
+            </div>
+          </div>
+          <div
+            class="powerful-second"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="image-container">
+              <img src="assets/images/secure.png" alt="" width="300" />
+            </div>
+            <div class="powerful-card-content">
+              <div class="powerful-card-title" style="color: #4a4a4a">
+                <span style="color: black">Keamanan</span> yang terjamin.
+              </div>
+              <div class="powerful-card-subtitle" style="color: #232121">
+                Start spending worldwide with your brand new digital or physical
+                Mastercard debit card.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
