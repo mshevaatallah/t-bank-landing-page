@@ -403,3 +403,80 @@ section {
   max-width: 350px;
   line-height: 30px;
 }
+
+.powerful-main-box {
+  width: 100%;
+  background-color: #201e1e;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.left-powerful {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 50px;
+}
+
+.rounded-light {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.rounded-light svg {
+  width: 50%;
+  height: 100%;
+}
+
+.transaksi-text {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  max-width: 250px;
+  line-height: 70px;
+}
+
+.transaksi-desc {
+  font-size: 15px;
+  font-weight: 500;
+  color: #d0d0d0;
+  margin-top: 20px;
+  max-width: 350px;
+  line-height: 30px;
+}
+
+.transaksi-subdesc {
+  font-size: 10px;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-top: 20px;
+  max-width: 350px;
+  line-height: 10px;
+}
+
+.right-powerful img {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .powerful-main-box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .right-powerful img {
+    display: none;
+  }
+}
