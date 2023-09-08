@@ -672,11 +672,12 @@ section {
 }
 
 .image-containerr {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  margin: auto;
 }
 
 .image-containerr img {
@@ -695,4 +696,27 @@ section {
   .transaksi-second-box {
     width: 100%;
   }
+}
+
+.transaksi-desc-box {
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.transaksi-desc-box .transaksi-title-box {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+
+  max-width: 400px;
+  line-height: 50px;
+}
+
+.transaksi-subtitle-box {
+  font-size: 15px;
+  font-weight: 500;
+  color: #d1d1d1;
+  margin-top: 20px;
+  max-width: 300px;
+  line-height: 20px;
 }
