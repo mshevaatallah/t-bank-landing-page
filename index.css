@@ -10,6 +10,7 @@
   --accent: #1e1e1e;
   --fill: #18624c;
   --filll: #e99f31;
+  --fillll: #6d59ea;
 }
 
 * {
@@ -555,6 +556,7 @@ section {
 .transaksi {
   padding-top: 80px;
   background-color: #fbe274;
+  padding-bottom: 80px;
 }
 .tekss {
   width: 40vw;
@@ -617,7 +619,7 @@ section {
   margin-top: 50px;
   border-radius: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
 }
 
@@ -700,7 +702,7 @@ section {
 
 .transaksi-desc-box {
   padding-left: 40px;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .transaksi-desc-box .transaksi-title-box {
@@ -731,4 +733,163 @@ section {
   .right-transaksi img {
     display: none;
   }
+}
+.review-transaksi {
+  padding-top: 80px;
+  background-color: #bec7e7;
+}
+
+.review-transaksi-container {
+  width: 80%;
+  margin: auto;
+}
+
+.teksss {
+  width: 40vw;
+  resize: both;
+  max-width: 70vw;
+  max-height: 100vh;
+  font-weight: 700;
+  animation: fill-up both linear;
+  animation-timeline: --section;
+  animation-range: cover;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .teksss {
+    width: 90vw;
+  }
+}
+.teksss > span {
+  outline-color: hsl(10 80% 50%);
+  outline-offset: 1ch;
+  font-size: clamp(3rem, 4vw + 1rem, 10rem);
+  color: var(--color);
+  text-decoration: none;
+  background-image:
+		/* First one is the highlight */ linear-gradient(
+      90deg,
+      transparent calc(100% - 8ch),
+      var(--accent) calc(100% - 8ch)
+    ),
+    linear-gradient(90deg, var(--fillll), var(--fillll)),
+    linear-gradient(90deg, var(--underline-color), var(--underline-color));
+  background-size: var(--underline-block-width) var(--underline-width),
+    var(--underline-block-width) var(--underline-width),
+    100% var(--underline-width);
+  background-repeat: no-repeat;
+  background-position-x: calc(
+      (var(--underline-block-width) * -1) +
+        (var(--progress) * var(--underline-block-width) * 1)
+    ),
+    calc(
+      (var(--underline-block-width) * -1) +
+        (var(--progress) * var(--underline-block-width) * 1)
+    ),
+    0;
+  background-position-y: 100%;
+  color: tranparent;
+  -webkit-background-clip: text;
+  animation: color-in both linear;
+  animation-timeline: --section;
+  animation-range: cover 65% cover 100%;
+  animation-delay: 0.5s;
+}
+
+.review-subteks {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-top: 20px;
+  max-width: 350px;
+  line-height: 30px;
+}
+
+.review-card-item {
+  width: 300px;
+  height: 150px;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.review-card-item-second {
+  width: 300px;
+  height: 150px;
+  background-color: #fbfbfb;
+  border-radius: 30px 0px 0px 30px;
+  margin-bottom: 20px;
+}
+
+.review-main-box {
+  width: 100%;
+  background-color: #ffffff;
+  height: 500px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rounded-rp {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+}
+
+.left-review {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.review-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-top: 20px;
+  max-width: 300px;
+  line-height: 70px;
+}
+
+.right-review {
+  display: flex;
+}
+
+.review-card-container-first {
+  overflow-y: hidden;
+}
+.review-card-container {
+  overflow-y: hidden;
+}
+@keyframes atas {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes bawah {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.review-card-item {
+  animation: 5s atas infinite linear;
+}
+
+.review-card-item-second {
+  animation: 5s bawah infinite linear;
 }
