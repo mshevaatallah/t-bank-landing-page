@@ -806,24 +806,25 @@ section {
 }
 
 .review-card-item {
-  width: 300px;
+  min-width: 300px;
   height: 150px;
   background-color: #fbfbfb;
   border-radius: 30px;
   margin-bottom: 20px;
 }
 .review-card-item-second {
-  width: 300px;
+  min-width: 300px;
   height: 150px;
   background-color: #fbfbfb;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 30px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .review-main-box {
   width: 100%;
   background-color: #ffffff;
-  height: 500px;
+  height: fit-content;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -892,4 +893,72 @@ section {
 
 .review-card-item-second {
   animation: 5s bawah infinite linear;
+}
+
+@media screen and (max-width: 1000px) {
+  .review-main-box {
+  }
+}
+.review-card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-card-item img {
+  width: 150px;
+}
+
+.review-card-item-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-card-item-second img {
+  width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+  .review-main-box {
+    flex-direction: column;
+  }
+  @keyframes kanananjay {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes kirianjay {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+
+  .review-card-container-first {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .review-card-item {
+    animation: 5s kanananjay infinite linear;
+  }
+
+  .review-card-container {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .review-card-item-second {
+    animation: 5s kirianjay infinite linear;
+  }
+
+  .right-review {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
 }
