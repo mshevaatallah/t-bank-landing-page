@@ -917,7 +917,7 @@ section {
   width: 150px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .review-main-box {
     flex-direction: column;
   }
@@ -960,5 +960,15 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+  }
+  .left-transaksi {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .left-review {
+    padding-left: 30px;
   }
 }
