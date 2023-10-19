@@ -425,7 +425,12 @@ section {
 
   padding-left: 50px;
 }
-
+@media screen and (max-width: 950px) {
+  .left-powerful {
+    padding-left: 30px;
+    width: 80%;
+  }
+}
 .rounded-light {
   border-radius: 50%;
   width: 50px;
@@ -446,7 +451,7 @@ section {
   color: white;
   margin-top: 20px;
   max-width: 250px;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 .transaksi-desc {
@@ -524,6 +529,12 @@ section {
 
 .powerful-card-content {
   padding-left: 40px;
+}
+
+@media screen and (max-width: 950px) {
+  .powerful-card-content {
+    padding-left: 30px;
+  }
 }
 
 .powerful-card-subtitle {
@@ -703,6 +714,12 @@ section {
 .transaksi-desc-box {
   padding-left: 40px;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .transaksi-desc-box {
+    padding-left: 30px;
+  }
 }
 
 .transaksi-desc-box .transaksi-title-box {
@@ -1276,5 +1293,10 @@ footer .footer-wrap p {
     font-size: 32px;
     /* height: 2px; */
     width: 280px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .powerful-main-box {
   }
 }
